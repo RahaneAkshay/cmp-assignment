@@ -1,7 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-createApp(App).mount('#app')
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap"
+import UserData from './components/UserData.vue'
 
+const app = createApp(App)
+app.component('user-data',UserData)
+app.mount('#app')
 // Task 1::
 // Add two components to the app: 
 // An ActiveUser component and an UserData component
